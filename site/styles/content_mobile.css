@@ -259,14 +259,19 @@ section.contact form label {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 15px;
-	width: 95%;
+	width: 90%;
 }
 
 section.contact form label input {
 	display:  block;
 	width: calc(100% -  30px);
 	padding:  15px;
+	transition: all 0.3s;
+	border: 1px solid grey;
+}
 
+section.contact form label input:focus {
+	border: 1px solid #16a71e ;
 }
 
 section.contact form label.radio {
@@ -302,6 +307,27 @@ section.contact form label.radio input {
 	margin-bottom: 10px;
 	margin-left: auto;
 	margin-right: auto;
+	width: 20px;
+	height: 20px;
+}
+
+section.contact form div.controls {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+	width: 95%;
+}
+
+section.contact form div.controls button {
+	background-color: #16a71e;
+	color: white;
+	border: none;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 45px;
+	padding-right: 45px;
+	line-height: 100%;
 }
 
 
