@@ -40,6 +40,7 @@
 			</nav>
 
 			<section class="contact">
+				<h2><cms:text constant="form_title"/></h2>
 				<cms:module
 					name="contact_form"
 					action="show"
