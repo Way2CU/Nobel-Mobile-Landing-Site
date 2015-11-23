@@ -122,6 +122,15 @@ nav.mobile_menu{
 	top: 66px !important;
 }
 
+nav.mobile_menu a {
+	padding:  1em;
+	border-bottom: 1px solid #2E3191;
+}
+
+nav.mobile_menu.visible {
+	width: 100%;
+}
+
 header {
 	display: block;
 	background-image: url(../images/mobile-header-background.jpg);
