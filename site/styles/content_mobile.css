@@ -32,3 +32,42 @@ a.menu {
 	height: 3px;
 	background-color: black;
 }
+
+a.menu:before {
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: 0px;
+	width: 35px;
+	height: 3px;
+	background-color: black;
+	transition: all 0.3s;
+}
+
+a.menu:after {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 0px;
+	width: 35px;
+	height: 3px;
+	background-color: black;
+	transition: all 0.3s;
+}
+
+a.phone {
+	position: absolute;
+	top: 50%;
+	margin-top: -22.5px;
+	right: 5px;
+	background-color: white;
+	border-radius: 50%;
+	padding: 10px;
+}
+
+a.phone svg {
+	display: block;
+	width: 25px;
+	height: 25px;
+	fill:#16a71e;
+}
