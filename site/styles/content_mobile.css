@@ -11,7 +11,6 @@ div.mobile_title {
 	padding-top: 5px;
 	padding-bottom:  5px;
 	background-color: transparent;
-
 }
 
 div.mobile_title a.logo {
@@ -36,6 +35,11 @@ div.mobile_title a.menu {
 	transition: all 0.3s;
 }
 
+body.contact div.mobile_title a.menu {
+	background-color: black;
+}
+
+body.contact div.mobile_title.visible a.menu,
 div.mobile_title.visible a.menu {
 	background-color: inherit;
 }
@@ -47,7 +51,6 @@ div.mobile_title.visible a.menu:before {
 	    -ms-transform: rotate(45deg);
 	     -o-transform: rotate(45deg);
 	        transform: rotate(45deg);
-
 }
 
 div.mobile_title.visible a.menu:after {
@@ -71,6 +74,10 @@ div.mobile_title a.menu:before {
 	transition: all 0.3s;
 }
 
+body.contact div.mobile_title a.menu:before {
+	background-color: black;
+}
+
 div.mobile_title a.menu:after {
 	content: "";
 	position: absolute;
@@ -82,6 +89,10 @@ div.mobile_title a.menu:after {
 	transition: all 0.3s;
 }
 
+body.contact div.mobile_title a.menu:after {
+	background-color: black;
+}
+
 div.mobile_title a.phone {
 	position: absolute;
 	top: 50%;
@@ -90,6 +101,14 @@ div.mobile_title a.phone {
 	background-color: white;
 	border-radius: 50%;
 	padding: 5px;
+}
+
+body.contact div.mobile_title a.phone {
+	background-color: #16a71e;
+}
+
+body.contact div.mobile_title a.phone svg {
+	fill: white;
 }
 
 div.mobile_title a.phone svg {
@@ -215,6 +234,19 @@ footer span a {
 
 footer span a:hover {
 	color:#5bc2d8;
+}
+
+/*
+  contact page
+*/
+
+section.contact {
+	margin-top: 76px;
+	text-align: center;
+}
+
+section.contact h2 {
+	color: #2E3191;
 }
 
 
