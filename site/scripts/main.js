@@ -52,11 +52,13 @@ Site.on_load = function() {
 	if (Site.is_mobile())
 		Site.mobile_menu = new Caracal.MobileMenu();
 
+	var url = window.location.origin + "/thankyou";
+
 	//  function for showing thank you page after for submission
 	$('form').on('dialog-show', function() {
 		$('form').hide();
 		$('div.send').hide();
-		window.open('http://www.walla.co.il');
+		window.open(url,"_self");
 		return false;
 	});
 };
