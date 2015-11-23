@@ -1,0 +1,50 @@
+<document>
+	<a
+		href="url_Make('', 'home')"
+		cms:eval="href"
+		>
+		<cms:text constant="menu_home"/>
+	</a>
+
+	<a
+		href="url_Make('', '')"
+		cms:eval="href"
+		>
+		<cms:text constant="menu_about"/>
+	</a>
+
+	<a
+		href="url_Make('', '')"
+		cms:eval="href"
+		>
+		<cms:text constant="menu_services"/>
+	</a>
+
+	<a
+		href="url_Make('', '')"
+		cms:eval="href"
+		>
+		<cms:text constant="menu_international"/>
+	</a>
+
+	<a
+		href="url_Make('', '')"
+		cms:eval="href"
+		>
+		<cms:text constant="menu_estimate"/>
+	</a>
+
+	<a
+		href="url_Make('', '')"
+		cms:eval="href"
+		>
+		<cms:text constant="menu_reviews"/>
+	</a>
+
+	<a
+		href="url_Make('', '')"
+		cms:eval="href"
+		>
+		<cms:text constant="menu_contact"/>
+	</a>
+</document>
