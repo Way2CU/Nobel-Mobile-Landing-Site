@@ -37,6 +37,49 @@
 			<nav class="mobile_menu">
 				<cms:template file="parts/menu.xml"/>
 			</nav>
+
+			<header>
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="title_article"
+					template="parts/article.xml"
+					/>
+			</header>
+
+			<section class="controls">
+				<a
+					href="'tel:'.urlencode(Language::getText('phone'))"
+					cms:eval="href"
+					class="phone_link"
+					>
+					<cms:text constant="call_to_action"/>
+					<svg>
+						<use
+							href="#icon-phone"
+							xlink:href="site/images/site-sprite.svg#icon-phone"
+							/>
+					</svg>
+				</a>
+
+				<a
+					href="url_Make('', 'contact')"
+					cms:eval="href"
+					class="form_link"
+					>
+					<cms:text constant="form_link_label"/>
+					<svg>
+						<use
+							href="#icon-duc"
+							xlink:href="site/images/site-sprite.svg#icon-duc"
+							/>
+					</svg>
+				</a>
+			</section>
+
+			<footer>
+				<span><cms:text constant="copyright"/></span>
+			</footer>
 		</body>
 	</html>
 </document>
