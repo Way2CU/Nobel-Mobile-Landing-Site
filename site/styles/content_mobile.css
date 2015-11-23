@@ -249,6 +249,61 @@ section.contact h2 {
 	color: #2E3191;
 }
 
+section.contact form {
+	display: block;
+	width: 100%;
+}
+
+section.contact form label {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+	width: 95%;
+}
+
+section.contact form label input {
+	display:  block;
+	width: calc(100% -  30px);
+	padding:  15px;
+
+}
+
+section.contact form label.radio {
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+}
+
+section.contact form label.radio span {
+	display: block;
+	padding-top: 46px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+section.contact form label.radio:first-of-type span {
+	background-image:  url(../images/truck.svg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 88px 36px;
+}
+
+section.contact form label.radio:nth-of-type(2) span {
+	background-image:  url(../images/plane.svg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 88px 36px;
+}
+
+section.contact form label.radio input {
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 
 
 
