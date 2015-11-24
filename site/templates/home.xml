@@ -43,6 +43,7 @@
 			</nav>
 
 			<header>
+				<span class="info"><cms:text constant="info"/></span>
 				<cms:module
 					name="articles"
 					action="show"
