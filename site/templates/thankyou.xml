@@ -36,7 +36,11 @@
 			</div>
 
 			<nav class="mobile_menu">
-				<cms:template file="parts/menu.xml"/>
+				<cms:module
+					name="links"
+					action="show_link_list"
+					template="parts/menu.xml"
+					/>
 			</nav>
 
 			<header>
