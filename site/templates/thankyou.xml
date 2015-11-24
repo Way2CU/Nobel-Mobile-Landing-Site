@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE document SYSTEM "../units/schema/language.dtd">
+<document>
+	<cms:var name="_DOCTYPE"/>
+	<html lang="$language" cms:eval="lang">
+		<head>
+			<title><cms:text constant="site_title"/></title>
+			<cms:module name="head_tag" action="print_tag"/>
+		</head>
+
+		<body class="$section == 'thankyou' ? 'thankyou' : false"
+				 cms:optional="class">
+			<cms:svg file="../images/site-sprite.svg"/>
+			<div class="mobile_title">
+				<a href="javascript:void(0)" class="menu"></a>
+				<a
+					class="logo"
+					href="url_Make('', 'home')"
+					cms:eval="href"
+					cms:optional="class"
+					>
+				</a>
+				<a
+					href="'tel:'.urlencode(Language::getText('phone'))"
+					cms:eval="href"
+					class="phone"
+					>
+					<svg>
+						<use
+							href="#icon-phone"
+							xlink:href="site/images/site-sprite.svg#icon-phone"
+							/>
+					</svg>
+				</a>
+
+			</div>
+
+			<nav class="mobile_menu">
+				<cms:template file="parts/menu.xml"/>
+			</nav>
+
+			<header>
+				<cms:module
+					name="articles"
+					action="show"
+					text_id="thankyou_article"
+					template="parts/article.xml"
+					/>
+			</header>
+
+
+			<footer>
+				<span><cms:text constant="copyright"/></span>
+			</footer>
+		</body>
+	</html>
+</document>
