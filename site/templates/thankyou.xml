@@ -43,18 +43,20 @@
 			</nav>
 
 			<header>
+	
+			</header>
+
+
+			<section class="controls">
 				<cms:module
 					name="articles"
 					action="show"
 					text_id="thankyou_article"
 					template="parts/article.xml"
 					/>
-			</header>
 
+			</section>
 
-			<footer>
-				<span><cms:text constant="copyright"/></span>
-			</footer>
 		</body>
 	</html>
 </document>

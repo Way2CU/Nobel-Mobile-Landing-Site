@@ -43,15 +43,16 @@
 
 			<header>
 				<span class="info"><cms:text constant="info"/></span>
+			</header>
+
+			<section class="controls">
+
 				<cms:module
 					name="articles"
 					action="show"
 					text_id="title_article"
 					template="parts/article.xml"
 					/>
-			</header>
-
-			<section class="controls">
 				<a
 					href="'tel:'.urlencode(Language::getText('phone'))"
 					cms:eval="href"
@@ -66,11 +67,7 @@
 					</svg>
 				</a>
 
-				<a
-					href="url_Make('', 'contact')"
-					cms:eval="href"
-					class="form_link"
-					>
+				<a href="javascript:void(0)" class="form_link" >
 					<cms:text constant="form_link_label"/>
 					<svg>
 						<use
@@ -81,9 +78,17 @@
 				</a>
 			</section>
 
-			<footer>
-				<span><cms:text constant="copyright"/></span>
-			</footer>
+			<section class="contact">
+				<h2><cms:text constant="form_title"/></h2>
+				<a href="javascript:void(0)" class="close"></a>
+				<cms:module
+					name="contact_form"
+					action="show"
+					text_id="contact"
+					/>
+			</section>
+
+
 		</body>
 	</html>
 </document>
