@@ -54,7 +54,7 @@ Site.on_load = function() {
 
 	var url = window.location.origin + "/thankyou";
 
-	//  function for showing thank you page after for submission
+	 //function for showing thank you page after for submission
 	$('form').on('dialog-show', function() {
 		$('form').hide();
 		$('div.send').hide();
