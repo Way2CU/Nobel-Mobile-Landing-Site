@@ -7,4 +7,7 @@
 	<section name="contact">
 		<language name="all" file="contact.xml" />
 	</section>
+	<section name="thankyou">
+		<language name="all" file="thankyou.xml" />
+	</section>
 </document>
