@@ -1,0 +1,369 @@
+/**
+ * Main Mobile Style Sheet
+ * Nobelvanlines Mobile Site
+ *
+ * Copyright (c) 2015. by Way2CU, http://way2cu.com
+ * Authors:Tal Reznic
+ */
+
+div.mobile_title {
+	text-align:  center;
+	padding-top: 5px;
+	padding-bottom:  5px;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+div.mobile_title a.logo {
+	display: inline-block;
+	vertical-align: middle;
+	background-image: url(../images/logo.svg);
+	background-repeat:  no-repeat;
+	background-position: center center;
+	background-size: 170px 50px;
+	width: 170px;
+	height: 50px;
+}
+
+div.mobile_title a.menu {
+	position: absolute;
+	top: 50%;
+	margin-top: -2.5px;
+	left: 5px;
+	width: 35px;
+	height: 5px;
+	background-color: #2E3191;
+	transition: all 0.3s;
+}
+
+body.contact div.mobile_title a.menu {
+	background-color: black;
+}
+
+body.contact div.mobile_title.visible a.menu,
+div.mobile_title.visible a.menu {
+	background-color: transparent;
+}
+
+div.mobile_title.visible a.menu:before {
+	top: 0px;
+	-webkit-transform: rotate(45deg);
+	   -moz-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	     -o-transform: rotate(45deg);
+	        transform: rotate(45deg);
+}
+
+div.mobile_title.visible a.menu:after {
+	top: 0px;
+	-webkit-transform: rotate(-45deg);
+	   -moz-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	     -o-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
+
+}
+
+div.mobile_title a.menu:before {
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: 0px;
+	width: 35px;
+	height: 5px;
+	background-color: #2E3191;
+	transition: all 0.3s;
+}
+
+body.contact div.mobile_title a.menu:before {
+	background-color: black;
+}
+
+div.mobile_title a.menu:after {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 0px;
+	width: 35px;
+	height: 5px;
+	background-color: #2E3191;
+	transition: all 0.3s;
+}
+
+body.contact div.mobile_title a.menu:after {
+	background-color: black;
+}
+
+div.mobile_title a.phone {
+	position: absolute;
+	top: 50%;
+	margin-top: -17.5px;
+	right: 5px;
+	background-color: white;
+	border-radius: 50%;
+	padding: 5px;
+}
+
+body.contact div.mobile_title a.phone {
+	background-color: #16a71e;
+}
+
+body.contact div.mobile_title a.phone svg {
+	fill: white;
+}
+
+div.mobile_title a.phone svg {
+	display: block;
+	width: 25px;
+	height: 25px;
+	fill:#16a71e;
+}
+
+nav.mobile_menu{
+	top: 60px !important;
+}
+
+nav.mobile_menu a {
+	padding:  1em;
+	border-bottom: 1px solid #2E3191;
+}
+
+nav.mobile_menu.visible {
+	width: 100%;
+}
+
+header {
+	display: block;
+	background-image: url(../images/mobile-header-background.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 100% auto;
+	min-height: 337px;
+	position:  relative;
+}
+
+header span.info {
+	display: inline-block;
+	margin-top: 90px;
+	margin-left: 50px;
+	font-weight: bold;
+	color: white;
+	position: relative;
+}
+
+header span.info:before {
+	content: "";
+	position: absolute;
+	bottom: 65%;
+	left: -18px;
+	background-image: url(../images/arrow.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 35px 35px;
+	width: 35px;
+	height: 35px;
+}
+
+
+body.thankyou header article {
+	bottom: 80px;
+	width: 90%;
+	left: 5%;
+}
+
+section.controls {
+	position: absolute;
+	bottom: 0%;
+	left: 0px;
+	width: 100%;
+	display: block;
+}
+
+body.thankyou section.controls {
+	bottom: 50%;
+}
+
+section.controls article {
+	display: block;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	color: white;
+	background-color: rgba(0, 0, 0, 1);
+}
+
+body.thankyou section.controls article {
+	background-color: rgba(0, 0, 0, 0.5)
+}
+
+section.controls article h1 {
+	padding-bottom: 10px;
+	font-size: 2.5em;
+	text-transform: uppercase;
+}
+
+section.controls article p {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+
+section.controls a {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.3em;
+	color: white;
+	width: 50%;
+}
+
+section.controls a svg {
+	display: block;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40px;
+	height: 40px;
+	fill: white;
+}
+
+section.controls a.phone_link {
+	background-color: #16a71e; 
+}
+
+section.controls a.phone_link svg {
+	-webkit-transform: rotate(-45deg);
+	   -moz-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	     -o-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
+}
+
+section.controls a.form_link {
+	background-color: #f6931e; 
+}
+
+/*
+  section.contact
+*/
+
+section.contact {
+	position: fixed;
+	top: 60px;
+	right: -100%;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	padding-top: 20px;
+	text-align: center;
+	background-color:  white;
+	transition: all 0.5s;
+}
+
+section.contact.visible {
+	right: 0%;
+}
+
+section.contact a.close {
+	position: absolute;
+	top: 20px;
+	right: 10px;
+	background-image: url(../images/close_button.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 30px 30px;
+	width: 30px;
+	height: 30px;
+}
+
+section.contact h2 {
+	color: #2E3191;
+}
+
+section.contact form {
+	display: block;
+	width: 100%;
+}
+
+section.contact form label {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+	width: 90%;
+}
+
+section.contact form label input {
+	display:  block;
+	width: calc(100% -  30px);
+	padding:  15px;
+	transition: all 0.3s;
+	border: 1px solid grey;
+}
+
+section.contact form label input:focus {
+	border: 1px solid #16a71e ;
+}
+
+section.contact form label.radio {
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+}
+
+section.contact form label.radio span {
+	display: block;
+	padding-top: 46px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+section.contact form label.radio:first-of-type span {
+	background-image:  url(../images/truck.svg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 88px 36px;
+}
+
+section.contact form label.radio:nth-of-type(2) span {
+	background-image:  url(../images/plane.svg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 88px 36px;
+}
+
+section.contact form label.radio input {
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 20px;
+	height: 20px;
+}
+
+section.contact form div.controls {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+	width: 95%;
+}
+
+section.contact form div.controls button {
+	background-color: #16a71e;
+	color: white;
+	border: none;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 45px;
+	padding-right: 45px;
+	line-height: 100%;
+}
+
+
+
+
