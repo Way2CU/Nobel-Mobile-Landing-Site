@@ -41,7 +41,7 @@ body.contact div.mobile_title a.menu {
 
 body.contact div.mobile_title.visible a.menu,
 div.mobile_title.visible a.menu {
-	background-color: inherit;
+	background-color: transparent;
 }
 
 div.mobile_title.visible a.menu:before {
@@ -151,6 +151,12 @@ header article {
 	width: 100%;
 	color: white;
 	background-color: rgba(0, 0, 0, 0.7);
+}
+
+body.thankyou header article {
+	bottom: 80px;
+	width: 90%;
+	left: 5%;
 }
 
 header article h1 {
