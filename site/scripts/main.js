@@ -52,6 +52,20 @@ Site.on_load = function() {
 	if (Site.is_mobile())
 		Site.mobile_menu = new Caracal.MobileMenu();
 
+
+	var open_link = $('a.form_link');
+	var form_dialog = $('section.contact');
+	var btn_close = $('section.contact a.close');
+	// Function for displaying form
+	open_link.on('click',function(){
+		form_dialog.addClass('visible');
+	});
+
+	// Function for closing form dialog
+	btn_close.on('click',function(){
+		form_dialog.removeClass('visible');
+	});
+
 	var url = window.location.origin + "/thankyou";
 
 	 //function for showing thank you page after for submission
