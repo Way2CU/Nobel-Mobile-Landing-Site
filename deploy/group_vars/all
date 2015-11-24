@@ -3,8 +3,8 @@ site:
   domain: nobelvanlines.com
   subdomain: lp
   make_alias: false
-  root: httpdocs
-  username: van_helsing_line
+  root: lp
+  username: "nobel"
   caracal_branch: develop
   ip_address: 74.208.153.118
   # owner: Some Person
