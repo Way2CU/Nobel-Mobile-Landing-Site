@@ -17,7 +17,6 @@
 					class="logo"
 					href="url_Make('', 'home')"
 					cms:eval="href"
-					cms:optional="class"
 					>
 				</a>
 				<a
