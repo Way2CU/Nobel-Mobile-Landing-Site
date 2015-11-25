@@ -8,8 +8,8 @@
 			<cms:module name="head_tag" action="print_tag"/>
 		</head>
 
-		<body class="$section == 'thankyou' ? 'thankyou' : false"
-				 cms:optional="class">
+		<body class="$section == 'thankyou' ? 'thankyou' : false" cms:optional="class">
+			<cms:raw file="parts/gtm.txt"/>
 			<cms:svg file="../images/site-sprite.svg"/>
 			<div class="mobile_title">
 				<a href="javascript:void(0)" class="menu"></a>

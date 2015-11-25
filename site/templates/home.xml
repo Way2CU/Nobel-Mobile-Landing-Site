@@ -9,6 +9,7 @@
 		</head>
 
 		<body class="$language_rtl ? 'rtl' : 'ltr'" cms:eval="class">
+			<cms:raw file="parts/gtm.txt"/>
 			<cms:svg file="../images/site-sprite.svg"/>
 			<div class="mobile_title">
 				<a href="javascript:void(0)" class="menu"></a>
